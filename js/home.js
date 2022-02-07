@@ -85,8 +85,9 @@ var itemTitle = document.getElementsByClassName("item__title");
 function redirectContainer(){
     for(var i = 0; i< itemTitle.length ; i++){
         itemTitle[i].addEventListener('click',function(){
-            window.location.href =  'Produce.html';
+            window.location.href =  'Product.html';
         })
     }
 }
 redirectContainer()
+
