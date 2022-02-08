@@ -57,3 +57,28 @@ function checkRadio(){
 //     })
 // }
 // typecode()
+// search__icon:hover
+var search__icon = document.getElementById("search__icon");
+var search__input = document.getElementById("search");
+var back__icon = document.getElementById("back__icon");
+
+function showSearchBox (){
+    search__input.style.display = 'block';
+    search__icon.style.display = 'none';
+    back__icon.style.display ='block';
+}
+function hideSearchBox (){
+    search__input.style.display = 'none';
+    search__icon.style.display = 'inline-block';
+    back__icon.style.display ='none';
+}
+
+search__icon.addEventListener('click',showSearchBox);
+back__icon.addEventListener('click',hideSearchBox);
+
+// back to home
+var logo__title = document.getElementById("logo__title");
+function backToHome(){
+    window.location.href = '/home.html';
+}
+logo__title.addEventListener('click',backToHome);
