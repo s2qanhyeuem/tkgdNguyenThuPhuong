@@ -15,10 +15,11 @@ userinfo.addEventListener('click',function(){
     window.location.href = '/userInfo.html';
 })
 
+
 //cart control
 var cart = document.getElementById("cart");
 function cartControl(){
-    alert("Cái này chưa làm nè!");
+    window.location.href = '/cart.html'
 }
 cart.addEventListener('click',cartControl);
 
