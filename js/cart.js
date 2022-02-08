@@ -32,26 +32,19 @@ logo__title.addEventListener('click',backToHome);
 
 // choose cart 
 var cartform = document.getElementsByClassName("cart-form");
-var check_cart = document.getElementsByClassName("check-cart");
 var check_radio = document.getElementsByName("price");
-function checkCart(){
-    for(var i = 0; i <cartform.length ; i ++){
+var check_cart = document.getElementsByClassName("check-cart");
 
-        if(i > 0){
-            cartform[i].classList.add("cart-form-check");
-            cartform[i-1].classList.remove("cart-form-check");
-        }
+function checkRadio(){
+    for (let i = 0; i < check_radio.length; i++) {
+        check_radio[i].addEventListener('click',function(){
+                cartform[i].classList.add("cart-form-check");
+                console.log(check_radio[i].value);
+        })
         
     }
 }
-function clickCart(){   
-    for(var i = 0 ; i< check_cart.length; i++){
-        check_cart[i].addEventListener('click',checkCart)
-    }
-    
-
-}
-clickCart()
+// checkRadio()
 // su kien nhap ma giam gia
 // var sale =document.getElementById("apply-sale");
 // var salecode = document.getElementsByClassName("salecode");
