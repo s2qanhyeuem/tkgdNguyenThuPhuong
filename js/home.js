@@ -51,20 +51,24 @@ function autoSlide (){
 // user _ control
 var user = document.getElementById("user");
 var logout =document.getElementById("logout");
+var userinfo = document.getElementById("user__info");
 
 function user_control(){
-    alert("Chức năng chưa hoàn thiện!");
+    alert("Không có gì đâu mà ấn ^^");
 }
 function userLogout(){
     window.location.href = '/index.html';
 }
 user.addEventListener('click',user_control);
 logout.addEventListener('click',userLogout);
+userinfo.addEventListener('click',function(){
+    window.location.href = '/userInfo.html';
+})
 
 //cart control
 var cart = document.getElementById("cart");
 function cartControl(){
-    alert("Chức năng chưa hoàn thiện!");
+    window.location.href = '/cart.html'
 }
 cart.addEventListener('click',cartControl);
 
