@@ -255,6 +255,7 @@ html{
 
 .info_item{
     padding: 0 35px;
+    max-width: 700px;
 }
 .produce__title{
     font-size: 32px;
@@ -360,10 +361,11 @@ html{
     display: flex;
     justify-content: space-between;
 }
-.add__cart > input{
+.add__cart  input{
     border-radius: 10px;
     text-align: center;
     width: 60px;
+    height: 40px;
 }
 .add__to__cart{
     background-color: #000;
@@ -382,6 +384,32 @@ html{
     color: #000;
     background-color: rgb(138, 136, 136);
     cursor: pointer;
+}
+.descripsion{
+    position: relative;
+}
+.des-head{
+    padding: 20px 0;
+}
+.des-grid{
+    padding: 10px 0;
+    font-size: 14px;
+}
+.des-grid p {
+    padding: 10px 0;
+}
+.des-grid span{
+    font-weight: bold;
+}
+.des-grid::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    top: 52px;
+    left: 0;
+    position: absolute;
+    opacity: 0.4;
 }
 /* footer */
 .about__site{
